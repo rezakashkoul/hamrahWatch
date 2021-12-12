@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F72455622765F3BE00D3D084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455612765F3BE00D3D084 /* AppDelegate.swift */; };
+		F72455642765F3BE00D3D084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455632765F3BE00D3D084 /* SceneDelegate.swift */; };
+		F72455662765F3BE00D3D084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455652765F3BE00D3D084 /* ViewController.swift */; };
+		F72455692765F3BE00D3D084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72455672765F3BE00D3D084 /* Main.storyboard */; };
+		F724556B2765F3BF00D3D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724556A2765F3BF00D3D084 /* Assets.xcassets */; };
+		F724556E2765F3BF00D3D084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F724556C2765F3BF00D3D084 /* LaunchScreen.storyboard */; };
+		F72455732765F3BF00D3D084 /* HamrahWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F72455722765F3BF00D3D084 /* HamrahWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F72455792765F3BF00D3D084 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72455772765F3BF00D3D084 /* Interface.storyboard */; };
+		F724557B2765F3BF00D3D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724557A2765F3BF00D3D084 /* Assets.xcassets */; };
+		F72455812765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F72455862765F3BF00D3D084 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455852765F3BF00D3D084 /* InterfaceController.swift */; };
+		F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */; };
+		F724558A2765F3BF00D3D084 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455892765F3BF00D3D084 /* NotificationController.swift */; };
+		F724558C2765F3BF00D3D084 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724558B2765F3BF00D3D084 /* ComplicationController.swift */; };
+		F724558E2765F3C000D3D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724558D2765F3C000D3D084 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72455742765F3BF00D3D084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72455562765F3BE00D3D084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72455712765F3BF00D3D084;
+			remoteInfo = "HamrahWatch WatchKit App";
+		};
+		F72455822765F3BF00D3D084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72455562765F3BE00D3D084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F724557F2765F3BF00D3D084;
+			remoteInfo = "HamrahWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F72455962765F3C000D3D084 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F72455812765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F724559A2765F3C000D3D084 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F72455732765F3BF00D3D084 /* HamrahWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F724555E2765F3BE00D3D084 /* HamrahWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamrahWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72455612765F3BE00D3D084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F72455632765F3BE00D3D084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F72455652765F3BE00D3D084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72455682765F3BE00D3D084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F724556A2765F3BF00D3D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F724556D2765F3BF00D3D084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F724556F2765F3BF00D3D084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72455722765F3BF00D3D084 /* HamrahWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HamrahWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72455782765F3BF00D3D084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F724557A2765F3BF00D3D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HamrahWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72455852765F3BF00D3D084 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F72455892765F3BF00D3D084 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F724558B2765F3BF00D3D084 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F724558D2765F3C000D3D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F724558F2765F3C000D3D084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72455902765F3C000D3D084 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F724555B2765F3BE00D3D084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F724557D2765F3BF00D3D084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F72455552765F3BE00D3D084 = {
+			isa = PBXGroup;
+			children = (
+				F72455602765F3BE00D3D084 /* HamrahWatch */,
+				F72455762765F3BF00D3D084 /* HamrahWatch WatchKit App */,
+				F72455842765F3BF00D3D084 /* HamrahWatch WatchKit Extension */,
+				F724555F2765F3BE00D3D084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F724555F2765F3BE00D3D084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F724555E2765F3BE00D3D084 /* HamrahWatch.app */,
+				F72455722765F3BF00D3D084 /* HamrahWatch WatchKit App.app */,
+				F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F72455602765F3BE00D3D084 /* HamrahWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F72455612765F3BE00D3D084 /* AppDelegate.swift */,
+				F72455632765F3BE00D3D084 /* SceneDelegate.swift */,
+				F72455652765F3BE00D3D084 /* ViewController.swift */,
+				F72455672765F3BE00D3D084 /* Main.storyboard */,
+				F724556A2765F3BF00D3D084 /* Assets.xcassets */,
+				F724556C2765F3BF00D3D084 /* LaunchScreen.storyboard */,
+				F724556F2765F3BF00D3D084 /* Info.plist */,
+			);
+			path = HamrahWatch;
+			sourceTree = "<group>";
+		};
+		F72455762765F3BF00D3D084 /* HamrahWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F72455772765F3BF00D3D084 /* Interface.storyboard */,
+				F724557A2765F3BF00D3D084 /* Assets.xcassets */,
+			);
+			path = "HamrahWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F72455842765F3BF00D3D084 /* HamrahWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F72455852765F3BF00D3D084 /* InterfaceController.swift */,
+				F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */,
+				F72455892765F3BF00D3D084 /* NotificationController.swift */,
+				F724558B2765F3BF00D3D084 /* ComplicationController.swift */,
+				F724558D2765F3C000D3D084 /* Assets.xcassets */,
+				F724558F2765F3C000D3D084 /* Info.plist */,
+				F72455902765F3C000D3D084 /* PushNotificationPayload.apns */,
+			);
+			path = "HamrahWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F724555D2765F3BE00D3D084 /* HamrahWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F724559B2765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch" */;
+			buildPhases = (
+				F724555A2765F3BE00D3D084 /* Sources */,
+				F724555B2765F3BE00D3D084 /* Frameworks */,
+				F724555C2765F3BE00D3D084 /* Resources */,
+				F724559A2765F3C000D3D084 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72455752765F3BF00D3D084 /* PBXTargetDependency */,
+			);
+			name = HamrahWatch;
+			productName = HamrahWatch;
+			productReference = F724555E2765F3BE00D3D084 /* HamrahWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F72455712765F3BF00D3D084 /* HamrahWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72455972765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch WatchKit App" */;
+			buildPhases = (
+				F72455702765F3BF00D3D084 /* Resources */,
+				F72455962765F3C000D3D084 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72455832765F3BF00D3D084 /* PBXTargetDependency */,
+			);
+			name = "HamrahWatch WatchKit App";
+			productName = "HamrahWatch WatchKit App";
+			productReference = F72455722765F3BF00D3D084 /* HamrahWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F724557F2765F3BF00D3D084 /* HamrahWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72455932765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch WatchKit Extension" */;
+			buildPhases = (
+				F724557C2765F3BF00D3D084 /* Sources */,
+				F724557D2765F3BF00D3D084 /* Frameworks */,
+				F724557E2765F3BF00D3D084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HamrahWatch WatchKit Extension";
+			productName = "HamrahWatch WatchKit Extension";
+			productReference = F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F72455562765F3BE00D3D084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F724555D2765F3BE00D3D084 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F72455712765F3BF00D3D084 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F724557F2765F3BF00D3D084 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F72455592765F3BE00D3D084 /* Build configuration list for PBXProject "HamrahWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F72455552765F3BE00D3D084;
+			productRefGroup = F724555F2765F3BE00D3D084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F724555D2765F3BE00D3D084 /* HamrahWatch */,
+				F72455712765F3BF00D3D084 /* HamrahWatch WatchKit App */,
+				F724557F2765F3BF00D3D084 /* HamrahWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F724555C2765F3BE00D3D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F724556E2765F3BF00D3D084 /* LaunchScreen.storyboard in Resources */,
+				F724556B2765F3BF00D3D084 /* Assets.xcassets in Resources */,
+				F72455692765F3BE00D3D084 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72455702765F3BF00D3D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F724557B2765F3BF00D3D084 /* Assets.xcassets in Resources */,
+				F72455792765F3BF00D3D084 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F724557E2765F3BF00D3D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F724558E2765F3C000D3D084 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F724555A2765F3BE00D3D084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72455662765F3BE00D3D084 /* ViewController.swift in Sources */,
+				F72455622765F3BE00D3D084 /* AppDelegate.swift in Sources */,
+				F72455642765F3BE00D3D084 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F724557C2765F3BF00D3D084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F724558A2765F3BF00D3D084 /* NotificationController.swift in Sources */,
+				F724558C2765F3BF00D3D084 /* ComplicationController.swift in Sources */,
+				F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */,
+				F72455862765F3BF00D3D084 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72455752765F3BF00D3D084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72455712765F3BF00D3D084 /* HamrahWatch WatchKit App */;
+			targetProxy = F72455742765F3BF00D3D084 /* PBXContainerItemProxy */;
+		};
+		F72455832765F3BF00D3D084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F724557F2765F3BF00D3D084 /* HamrahWatch WatchKit Extension */;
+			targetProxy = F72455822765F3BF00D3D084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F72455672765F3BE00D3D084 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72455682765F3BE00D3D084 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F724556C2765F3BF00D3D084 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F724556D2765F3BF00D3D084 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F72455772765F3BF00D3D084 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72455782765F3BF00D3D084 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F72455912765F3C000D3D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F72455922765F3C000D3D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F72455942765F3C000D3D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HamrahWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HamrahWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F72455952765F3C000D3D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HamrahWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HamrahWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F72455982765F3C000D3D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = HamrahWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "HamrahWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ebcom.HamrahWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F72455992765F3C000D3D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = HamrahWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "HamrahWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ebcom.HamrahWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F724559C2765F3C000D3D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HamrahWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F724559D2765F3C000D3D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 967Q89UR83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HamrahWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ebcom.HamrahWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F72455592765F3BE00D3D084 /* Build configuration list for PBXProject "HamrahWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72455912765F3C000D3D084 /* Debug */,
+				F72455922765F3C000D3D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72455932765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72455942765F3C000D3D084 /* Debug */,
+				F72455952765F3C000D3D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72455972765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72455982765F3C000D3D084 /* Debug */,
+				F72455992765F3C000D3D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F724559B2765F3C000D3D084 /* Build configuration list for PBXNativeTarget "HamrahWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F724559C2765F3C000D3D084 /* Debug */,
+				F724559D2765F3C000D3D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F72455562765F3BE00D3D084 /* Project object */;
+}
