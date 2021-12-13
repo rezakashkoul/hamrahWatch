@@ -204,7 +204,7 @@
                             <color key="backgroundColor" name="AccentColor"/>
                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
                             <connections>
-                                <segue destination="23z-4X-TOw" kind="push" id="b5b-aj-9pj"/>
+                                <segue destination="23z-4X-TOw" kind="modal" id="b5b-aj-9pj"/>
                             </connections>
                         </button>
                     </items>
@@ -215,9 +215,9 @@
         <!--صورت‌حساب-->
         <scene sceneID="Fc3-JF-Qc6">
             <objects>
-                <controller identifier="ChoosingBillKindController" title="صورت‌حساب" id="23z-4X-TOw" customClass="BillKindController" customModule="HamrahWatch_WatchKit_Extension">
+                <controller identifier="BillKindController" title="صورت‌حساب" id="23z-4X-TOw" customClass="BillKindController" customModule="HamrahWatch_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="I7M-Os-T4B" userLabel="ButtonGroup">
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="I7M-Os-T4B" userLabel="buttonStackView">
                             <items>
                                 <button width="1" alignment="center" verticalAlignment="center" title="میان‌دوره" id="hV8-vA-Ogj">
                                     <color key="backgroundColor" name="AccentColor"/>
@@ -265,6 +265,9 @@
                                 <button width="130" alignment="center" verticalAlignment="bottom" title="پرداخت" id="P6e-24-J7f">
                                     <color key="backgroundColor" name="AccentColor"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="payLongTermBill" destination="23z-4X-TOw" id="xIN-0Z-vLZ"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -284,7 +287,7 @@
                                     <color key="textColor" name="AccentColor"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                 </label>
-                                <group width="1" alignment="left" id="lrX-Hh-iuT" userLabel="deptToPay">
+                                <group width="1" alignment="left" id="lrX-Hh-iuT" userLabel="debtToPay">
                                     <items>
                                         <label alignment="center" text="ریال" id="AbT-0n-ucb"/>
                                         <label alignment="center" text="۱۰۰۰" numberOfLines="0" id="YRE-cq-RzI"/>
@@ -302,13 +305,22 @@
                                 <button width="130" alignment="center" verticalAlignment="bottom" title="پرداخت" id="GkY-qI-P2O">
                                     <color key="backgroundColor" name="AccentColor"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="payMidTermBill" destination="23z-4X-TOw" id="oPh-EG-iBm"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="buttonsStackView" destination="I7M-Os-T4B" id="A1U-A3-PrH"/>
+                        <outlet property="buttonStackView" destination="I7M-Os-T4B" id="A1U-A3-PrH"/>
+                        <outlet property="longTermBillAmount" destination="FvY-GQ-Wvm" id="Qdd-fY-UvD"/>
+                        <outlet property="longTermDebt" destination="ubB-gp-3dH" id="Gxr-uh-SZt"/>
+                        <outlet property="longTermPickerView" destination="4VU-zU-KLB" id="N1M-5x-gBl"/>
                         <outlet property="longTermStackView" destination="77X-c3-sSF" id="BJ8-8q-jcw"/>
+                        <outlet property="midTermBillAmount" destination="FKp-0D-VmW" id="a0F-4X-Ewj"/>
+                        <outlet property="midTermBillPeriod" destination="Cap-Y5-P5y" id="ULS-8l-Cxc"/>
+                        <outlet property="midTermDebt" destination="lrX-Hh-iuT" id="3ay-jY-dSQ"/>
                         <outlet property="midTermStackView" destination="7lg-WI-Mgh" id="prc-ZL-Wxk"/>
                     </connections>
                 </controller>

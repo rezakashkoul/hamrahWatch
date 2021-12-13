@@ -13,10 +13,23 @@ class BillKindController: WKInterfaceController {
     
     @IBOutlet weak var midTermStackView: WKInterfaceGroup!
     @IBOutlet weak var longTermStackView: WKInterfaceGroup!
-    @IBOutlet weak var buttonsStackView: WKInterfaceGroup!
+    @IBOutlet weak var buttonStackView: WKInterfaceGroup!
     
+    @IBOutlet weak var midTermBillAmount: WKInterfaceGroup!
+    @IBOutlet weak var midTermDebt: WKInterfaceGroup!
+    @IBOutlet weak var midTermBillPeriod: WKInterfaceLabel!
     
+    @IBOutlet weak var longTermBillAmount: WKInterfaceGroup!
+    @IBOutlet weak var longTermDebt: WKInterfaceGroup!
+    @IBOutlet weak var longTermPickerView: WKInterfacePicker!
     
+    @IBAction func payLongTermBill() {
+        print("pay the LONG-term bill")
+    }
+    
+    @IBAction func payMidTermBill() {
+        print("pay the MID-term bill")
+    }
     
     
     
@@ -57,7 +70,7 @@ class BillKindController: WKInterfaceController {
     }
     
     func configueViewBasedOnBillKind() {
-        buttonsStackView.setHidden(true)
+        buttonStackView.setHidden(true)
         switch status {
         case .midTerm:
             midTermStackView.setHidden(false)
