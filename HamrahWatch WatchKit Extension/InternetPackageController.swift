@@ -21,15 +21,8 @@ class InternetPackageController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        DispatchQueue.main.async {
             self.setupTable()
-        }
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-    }
-    
     
     func setupTable() {
         if tableView == nil { return }

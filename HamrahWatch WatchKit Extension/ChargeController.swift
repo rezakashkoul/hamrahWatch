@@ -27,7 +27,7 @@ class ChargeController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        pushController(withName: "newPage", context: (index: rowIndex, data: chargeKinds[rowIndex]))
+        pushController(withName: "SetChargeAmountController", context: (index: rowIndex, data: chargeKinds[rowIndex]))
     }
     
     

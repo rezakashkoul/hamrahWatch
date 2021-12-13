@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F715C06B2767AAFD003896CD /* SetChargeAmountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715C06A2767AAFD003896CD /* SetChargeAmountController.swift */; };
 		F72455622765F3BE00D3D084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455612765F3BE00D3D084 /* AppDelegate.swift */; };
 		F72455642765F3BE00D3D084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455632765F3BE00D3D084 /* SceneDelegate.swift */; };
 		F72455662765F3BE00D3D084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455652765F3BE00D3D084 /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F715C06A2767AAFD003896CD /* SetChargeAmountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetChargeAmountController.swift; sourceTree = "<group>"; };
 		F724555E2765F3BE00D3D084 /* HamrahWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamrahWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72455612765F3BE00D3D084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72455632765F3BE00D3D084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,10 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				F72455A2276616E000D3D084 /* PackageController.swift */,
+				F72455852765F3BF00D3D084 /* InternetPackageController.swift */,
 				F72455A02766069800D3D084 /* BuyPackageController.swift */,
 				F74A9DF22767A2700056F02E /* ChargeController.swift */,
+				F715C06A2767AAFD003896CD /* SetChargeAmountController.swift */,
 				F7FD3D55276753C2002189AC /* BillKindController.swift */,
-				F72455852765F3BF00D3D084 /* InternetPackageController.swift */,
 				F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */,
 				F72455892765F3BF00D3D084 /* NotificationController.swift */,
 				F724558B2765F3BF00D3D084 /* ComplicationController.swift */,
@@ -334,6 +337,7 @@
 				F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */,
 				F74A9DF32767A2700056F02E /* ChargeController.swift in Sources */,
 				F72455A12766069800D3D084 /* BuyPackageController.swift in Sources */,
+				F715C06B2767AAFD003896CD /* SetChargeAmountController.swift in Sources */,
 				F724559F2766002E00D3D084 /* InternetPackageCustomCell.swift in Sources */,
 				F7FD3D56276753C2002189AC /* BillKindController.swift in Sources */,
 				F72455862765F3BF00D3D084 /* InternetPackageController.swift in Sources */,
