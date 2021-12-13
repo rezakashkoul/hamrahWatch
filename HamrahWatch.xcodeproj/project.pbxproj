@@ -17,11 +17,16 @@
 		F72455792765F3BF00D3D084 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72455772765F3BF00D3D084 /* Interface.storyboard */; };
 		F724557B2765F3BF00D3D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724557A2765F3BF00D3D084 /* Assets.xcassets */; };
 		F72455812765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F72455862765F3BF00D3D084 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455852765F3BF00D3D084 /* InterfaceController.swift */; };
+		F72455862765F3BF00D3D084 /* InternetPackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455852765F3BF00D3D084 /* InternetPackageController.swift */; };
 		F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */; };
 		F724558A2765F3BF00D3D084 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455892765F3BF00D3D084 /* NotificationController.swift */; };
 		F724558C2765F3BF00D3D084 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724558B2765F3BF00D3D084 /* ComplicationController.swift */; };
 		F724558E2765F3C000D3D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F724558D2765F3C000D3D084 /* Assets.xcassets */; };
+		F724559F2766002E00D3D084 /* InternetPackageCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724559E2766002E00D3D084 /* InternetPackageCustomCell.swift */; };
+		F72455A12766069800D3D084 /* BuyPackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A02766069800D3D084 /* BuyPackageController.swift */; };
+		F72455A3276616E000D3D084 /* PackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A2276616E000D3D084 /* PackageController.swift */; };
+		F72455A527661F9F00D3D084 /* PackageCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A427661F9F00D3D084 /* PackageCustomCell.swift */; };
+		F7FD3D56276753C2002189AC /* BillKindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FD3D55276753C2002189AC /* BillKindController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +84,18 @@
 		F72455782765F3BF00D3D084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F724557A2765F3BF00D3D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72455802765F3BF00D3D084 /* HamrahWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HamrahWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F72455852765F3BF00D3D084 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F72455852765F3BF00D3D084 /* InternetPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetPackageController.swift; sourceTree = "<group>"; };
 		F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F72455892765F3BF00D3D084 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F724558B2765F3BF00D3D084 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		F724558D2765F3C000D3D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F724558F2765F3C000D3D084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72455902765F3C000D3D084 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F724559E2766002E00D3D084 /* InternetPackageCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetPackageCustomCell.swift; sourceTree = "<group>"; };
+		F72455A02766069800D3D084 /* BuyPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyPackageController.swift; sourceTree = "<group>"; };
+		F72455A2276616E000D3D084 /* PackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageController.swift; sourceTree = "<group>"; };
+		F72455A427661F9F00D3D084 /* PackageCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCustomCell.swift; sourceTree = "<group>"; };
+		F7FD3D55276753C2002189AC /* BillKindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillKindController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				F72455772765F3BF00D3D084 /* Interface.storyboard */,
+				F72455A427661F9F00D3D084 /* PackageCustomCell.swift */,
+				F724559E2766002E00D3D084 /* InternetPackageCustomCell.swift */,
 				F724557A2765F3BF00D3D084 /* Assets.xcassets */,
 			);
 			path = "HamrahWatch WatchKit App";
@@ -152,7 +164,10 @@
 		F72455842765F3BF00D3D084 /* HamrahWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F72455852765F3BF00D3D084 /* InterfaceController.swift */,
+				F7FD3D55276753C2002189AC /* BillKindController.swift */,
+				F72455A2276616E000D3D084 /* PackageController.swift */,
+				F72455852765F3BF00D3D084 /* InternetPackageController.swift */,
+				F72455A02766069800D3D084 /* BuyPackageController.swift */,
 				F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */,
 				F72455892765F3BF00D3D084 /* NotificationController.swift */,
 				F724558B2765F3BF00D3D084 /* ComplicationController.swift */,
@@ -306,9 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F724558A2765F3BF00D3D084 /* NotificationController.swift in Sources */,
+				F72455A527661F9F00D3D084 /* PackageCustomCell.swift in Sources */,
 				F724558C2765F3BF00D3D084 /* ComplicationController.swift in Sources */,
+				F72455A3276616E000D3D084 /* PackageController.swift in Sources */,
 				F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */,
-				F72455862765F3BF00D3D084 /* InterfaceController.swift in Sources */,
+				F72455A12766069800D3D084 /* BuyPackageController.swift in Sources */,
+				F724559F2766002E00D3D084 /* InternetPackageCustomCell.swift in Sources */,
+				F7FD3D56276753C2002189AC /* BillKindController.swift in Sources */,
+				F72455862765F3BF00D3D084 /* InternetPackageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

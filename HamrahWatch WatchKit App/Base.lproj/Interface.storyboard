@@ -1,16 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jTD-ql-czT">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
+        <!--خرید شارژ-->
+        <scene sceneID="LQ0-xk-rFN">
+            <objects>
+                <controller title="خرید شارژ" id="ck5-4e-eTN">
+                    <items>
+                        <label width="136" height="105" alignment="center" text="شارژ حساب" textAlignment="center" numberOfLines="0" id="Kkd-Uz-MNa">
+                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </label>
+                        <button width="130" alignment="center" verticalAlignment="bottom" title="خرید شارژ" id="Laa-ZD-uUF">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="ptR-5X-TJb" kind="relationship" relationship="nextPage" id="1ZA-NL-5nU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-332" y="304"/>
+        </scene>
         <!--Interface Controller-->
+        <scene sceneID="nxq-zr-6v4">
+            <objects>
+                <controller id="gno-Dg-zVP"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="304"/>
+        </scene>
+        <!--خرید بسته-->
+        <scene sceneID="Q9J-9D-EHg">
+            <objects>
+                <controller identifier="PackageController" title="خرید بسته" id="gHN-Bi-uln" customClass="PackageController" customModule="HamrahWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="9rG-fT-b1t">
+                            <items>
+                                <tableRow identifier="packageCell" id="sTQ-A9-eTg" customClass="PackageCustomCell" customModule="HamrahWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="jA6-OQ-vkP">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="بسته‌ی شماره‌ی " id="v19-Ge-YEb"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleOfPackage" destination="v19-Ge-YEb" id="j4g-qA-snj"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="9rG-fT-b1t" id="aPr-pZ-aaJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-19"/>
+        </scene>
+        <!--بسته‌های اینترنت-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="InternetPackageController" title="بسته‌های اینترنت" id="AgC-eL-Hgc" customClass="InternetPackageController" customModule="HamrahWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="t1v-4d-tro">
+                            <items>
+                                <tableRow identifier="internetPackageCell" id="A1K-9p-pGR" customClass="InternetPackageCustomCell" customModule="HamrahWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Gqh-B2-ml0">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="بسته‌ی شماره‌ی " id="Yxo-Gg-nW7"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleOfPackage" destination="Yxo-Gg-nW7" id="oU4-DE-mgY"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="t1v-4d-tro" id="i3n-mC-zoa"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="184" y="-19"/>
+        </scene>
+        <!--خرید بسته-->
+        <scene sceneID="FCj-Bb-x5R">
+            <objects>
+                <controller identifier="BuyPackageController" title="خرید بسته" id="lpx-31-fFT" customClass="BuyPackageController" customModule="HamrahWatch_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="LSE-2g-ldA">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator alignment="left" id="0Ui-4D-Zmc">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator alignment="left" id="CvN-Nd-ypo">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <label alignment="center" text="اسم بسته" textAlignment="center" id="7cW-ib-dRn"/>
+                        <separator alignment="left" id="Ybc-PX-CL1">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator alignment="left" id="oRF-43-215">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator alignment="left" id="CMs-8J-ECZ">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <label alignment="center" text="...توضیحات بسته..." id="QfE-YY-kT3"/>
+                        <button width="1" alignment="left" title="خرید از کیف‌پول" id="gR7-1F-diq">
+                            <color key="titleColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <action selector="buyFromWalletAction" destination="lpx-31-fFT" id="Jgx-S5-LEo"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="41" alignment="left" title="خرید از اعتبار (قبض)" id="4jQ-ft-L59">
+                            <color key="titleColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <action selector="buyFromBalanceOrBillAction" destination="lpx-31-fFT" id="zbl-rB-xx7"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="buyFromBalanceOrBill" destination="4jQ-ft-L59" id="0uJ-53-ZFw"/>
+                        <outlet property="buyFromWallet" destination="gR7-1F-diq" id="4Fe-OL-Fbg"/>
+                        <outlet property="packageDescription" destination="QfE-YY-kT3" id="Tnc-O8-7G8"/>
+                        <outlet property="packageName" destination="7cW-ib-dRn" id="gvq-IJ-RjF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="410" y="-19"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -27,21 +153,172 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="430" y="1260"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HamrahWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="678" y="1260"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="HamrahWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="678" y="962"/>
+        </scene>
+        <!--خرید بسته-->
+        <scene sceneID="deh-2T-q6Z">
+            <objects>
+                <controller title="خرید بسته" id="jTD-ql-czT">
+                    <items>
+                        <label width="136" alignment="center" text="بسته‌‌های اینترنت، مکالمه و پیامک" textAlignment="center" numberOfLines="0" id="0Me-Vk-n7N">
+                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </label>
+                        <button width="130" alignment="center" verticalAlignment="bottom" title="خرید" id="lFf-Kh-dit">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <segue destination="gHN-Bi-uln" kind="push" id="BnS-Qm-f6r"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="ck5-4e-eTN" kind="relationship" relationship="nextPage" id="pGs-hM-Bzl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-19"/>
+        </scene>
+        <!--پرداخت قبض-->
+        <scene sceneID="xdu-UJ-I5h">
+            <objects>
+                <controller title="پرداخت قبض" id="ptR-5X-TJb">
+                    <items>
+                        <label width="136" height="93" alignment="center" text="صورت‌حساب میان‌دوره و پایان‌دوره" textAlignment="center" numberOfLines="0" id="D9n-RJ-WR5">
+                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </label>
+                        <button width="130" alignment="center" verticalAlignment="bottom" title="پرداخت" id="O2W-m8-cUB">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <segue destination="23z-4X-TOw" kind="push" id="b5b-aj-9pj"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-322" y="617"/>
+        </scene>
+        <!--صورت‌حساب-->
+        <scene sceneID="Fc3-JF-Qc6">
+            <objects>
+                <controller identifier="ChoosingBillKindController" title="صورت‌حساب" id="23z-4X-TOw" customClass="BillKindController" customModule="HamrahWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="I7M-Os-T4B" userLabel="ButtonGroup">
+                            <items>
+                                <button width="1" alignment="center" verticalAlignment="center" title="میان‌دوره" id="hV8-vA-Ogj">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="midTermBill" destination="23z-4X-TOw" id="BZO-W2-MZm"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="center" verticalAlignment="center" title="پایان‌دوره" id="Uxy-bW-2V1">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="longTermBill" destination="23z-4X-TOw" id="smv-fw-2dt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="77X-c3-sSF" userLabel="longTermStackView">
+                            <items>
+                                <label alignment="center" text="مبلغ قابل پرداخت" id="5tQ-7r-Cbh">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="1" alignment="left" id="FvY-GQ-Wvm" userLabel="totalAmount">
+                                    <items>
+                                        <label alignment="center" text="ریال" id="HP3-p7-Kjy"/>
+                                        <label alignment="center" text="۱۱۶۰۰" numberOfLines="0" id="Xzn-dy-Ovh"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="بدهی پیشین" textAlignment="center" id="NMO-8x-zui">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="1" alignment="left" id="ubB-gp-3dH" userLabel="deptToPay">
+                                    <items>
+                                        <label alignment="center" text="ریال" id="5fz-g3-yVm"/>
+                                        <label alignment="center" text="۱۰۰۰" numberOfLines="0" id="nr5-4i-GYd"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="صورت‌حساب تا" textAlignment="center" id="xoE-A4-rRi">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <picker height="100" alignment="left" id="4VU-zU-KLB"/>
+                                <button width="130" alignment="center" verticalAlignment="bottom" title="پرداخت" id="P6e-24-J7f">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="7lg-WI-Mgh" userLabel="midTermStackView">
+                            <items>
+                                <label alignment="center" text="مبلغ قابل پرداخت" id="UL5-YU-6Lz">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="1" alignment="left" id="FKp-0D-VmW" userLabel="totalAmount">
+                                    <items>
+                                        <label alignment="center" text="ریال" id="lOv-sz-xLA"/>
+                                        <label alignment="center" text="۱۱۶۰۰" numberOfLines="0" id="wbb-SG-e7J"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="بدهی پیشین" textAlignment="center" id="lmR-rn-bQX">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="1" alignment="left" id="lrX-Hh-iuT" userLabel="deptToPay">
+                                    <items>
+                                        <label alignment="center" text="ریال" id="AbT-0n-ucb"/>
+                                        <label alignment="center" text="۱۰۰۰" numberOfLines="0" id="YRE-cq-RzI"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="صورت‌حساب تا" textAlignment="center" id="2dT-dK-0pt">
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="1" alignment="left" id="xpp-T5-DP9" userLabel="timeGroup">
+                                    <items>
+                                        <label alignment="center" text="۲۲/۰۹/۱۴۰۰ - ۱۳:۵۰" textAlignment="center" numberOfLines="0" id="Cap-Y5-P5y"/>
+                                    </items>
+                                </group>
+                                <button width="130" alignment="center" verticalAlignment="bottom" title="پرداخت" id="GkY-qI-P2O">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonsStackView" destination="I7M-Os-T4B" id="A1U-A3-PrH"/>
+                        <outlet property="longTermStackView" destination="77X-c3-sSF" id="BJ8-8q-jcw"/>
+                        <outlet property="midTermStackView" destination="7lg-WI-Mgh" id="prc-ZL-Wxk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-25" y="617"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
