@@ -26,6 +26,8 @@
 		F72455A12766069800D3D084 /* BuyPackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A02766069800D3D084 /* BuyPackageController.swift */; };
 		F72455A3276616E000D3D084 /* PackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A2276616E000D3D084 /* PackageController.swift */; };
 		F72455A527661F9F00D3D084 /* PackageCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72455A427661F9F00D3D084 /* PackageCustomCell.swift */; };
+		F74A9DF32767A2700056F02E /* ChargeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A9DF22767A2700056F02E /* ChargeController.swift */; };
+		F74A9DF52767A2E30056F02E /* ChargeCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A9DF42767A2E30056F02E /* ChargeCustomCell.swift */; };
 		F7FD3D56276753C2002189AC /* BillKindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FD3D55276753C2002189AC /* BillKindController.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		F72455A02766069800D3D084 /* BuyPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyPackageController.swift; sourceTree = "<group>"; };
 		F72455A2276616E000D3D084 /* PackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageController.swift; sourceTree = "<group>"; };
 		F72455A427661F9F00D3D084 /* PackageCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCustomCell.swift; sourceTree = "<group>"; };
+		F74A9DF22767A2700056F02E /* ChargeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeController.swift; sourceTree = "<group>"; };
+		F74A9DF42767A2E30056F02E /* ChargeCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeCustomCell.swift; sourceTree = "<group>"; };
 		F7FD3D55276753C2002189AC /* BillKindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillKindController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 			children = (
 				F72455772765F3BF00D3D084 /* Interface.storyboard */,
 				F72455A427661F9F00D3D084 /* PackageCustomCell.swift */,
+				F74A9DF42767A2E30056F02E /* ChargeCustomCell.swift */,
 				F724559E2766002E00D3D084 /* InternetPackageCustomCell.swift */,
 				F724557A2765F3BF00D3D084 /* Assets.xcassets */,
 			);
@@ -164,10 +169,11 @@
 		F72455842765F3BF00D3D084 /* HamrahWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F7FD3D55276753C2002189AC /* BillKindController.swift */,
 				F72455A2276616E000D3D084 /* PackageController.swift */,
-				F72455852765F3BF00D3D084 /* InternetPackageController.swift */,
 				F72455A02766069800D3D084 /* BuyPackageController.swift */,
+				F74A9DF22767A2700056F02E /* ChargeController.swift */,
+				F7FD3D55276753C2002189AC /* BillKindController.swift */,
+				F72455852765F3BF00D3D084 /* InternetPackageController.swift */,
 				F72455872765F3BF00D3D084 /* ExtensionDelegate.swift */,
 				F72455892765F3BF00D3D084 /* NotificationController.swift */,
 				F724558B2765F3BF00D3D084 /* ComplicationController.swift */,
@@ -322,9 +328,11 @@
 			files = (
 				F724558A2765F3BF00D3D084 /* NotificationController.swift in Sources */,
 				F72455A527661F9F00D3D084 /* PackageCustomCell.swift in Sources */,
+				F74A9DF52767A2E30056F02E /* ChargeCustomCell.swift in Sources */,
 				F724558C2765F3BF00D3D084 /* ComplicationController.swift in Sources */,
 				F72455A3276616E000D3D084 /* PackageController.swift in Sources */,
 				F72455882765F3BF00D3D084 /* ExtensionDelegate.swift in Sources */,
+				F74A9DF32767A2700056F02E /* ChargeController.swift in Sources */,
 				F72455A12766069800D3D084 /* BuyPackageController.swift in Sources */,
 				F724559F2766002E00D3D084 /* InternetPackageCustomCell.swift in Sources */,
 				F7FD3D56276753C2002189AC /* BillKindController.swift in Sources */,

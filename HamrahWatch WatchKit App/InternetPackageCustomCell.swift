@@ -10,6 +10,6 @@ import WatchKit
 
 class InternetPackageCustomCell: NSObject {
 
-    @IBOutlet weak var titleOfPackage: WKInterfaceLabel!
+    @IBOutlet weak var internetPackageTitle: WKInterfaceLabel!
     
 }

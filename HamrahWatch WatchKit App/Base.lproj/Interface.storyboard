@@ -18,6 +18,9 @@
                         <button width="130" alignment="center" verticalAlignment="bottom" title="خرید شارژ" id="Laa-ZD-uUF">
                             <color key="backgroundColor" name="AccentColor"/>
                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <segue destination="gno-Dg-zVP" kind="push" id="35a-P7-Zcb"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
@@ -27,10 +30,32 @@
             </objects>
             <point key="canvasLocation" x="-332" y="304"/>
         </scene>
-        <!--Interface Controller-->
+        <!--نوع شارژ-->
         <scene sceneID="nxq-zr-6v4">
             <objects>
-                <controller id="gno-Dg-zVP"/>
+                <controller identifier="ChargeController" title="نوع شارژ" id="gno-Dg-zVP" customClass="ChargeController" customModule="HamrahWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="gqA-LM-94d">
+                            <items>
+                                <tableRow identifier="cell" id="bim-Zh-OdL" customClass="ChargeCustomCell" customModule="HamrahWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="q4o-6M-Fl5">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="charge" textAlignment="left" id="p0z-ao-AWj"/>
+                                            <imageView width="36" alignment="right" verticalAlignment="center" id="BYm-c0-H5x"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="chargeKindImage" destination="BYm-c0-H5x" id="VKF-lL-Nes"/>
+                                        <outlet property="chargeKindTitle" destination="p0z-ao-AWj" id="gxd-dR-i3D"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="gqA-LM-94d" id="dWK-62-V2B"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-42" y="304"/>
         </scene>
@@ -48,7 +73,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="titleOfPackage" destination="v19-Ge-YEb" id="j4g-qA-snj"/>
+                                        <outlet property="packageTitle" destination="v19-Ge-YEb" id="j4g-qA-snj"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -75,7 +100,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="titleOfPackage" destination="Yxo-Gg-nW7" id="oU4-DE-mgY"/>
+                                        <outlet property="internetPackageTitle" destination="Yxo-Gg-nW7" id="oU4-DE-mgY"/>
                                     </connections>
                                 </tableRow>
                             </items>

@@ -10,6 +10,6 @@ import WatchKit
 
 class PackageCustomCell: NSObject {
     
-    @IBOutlet weak var titleOfPackage: WKInterfaceLabel!
+    @IBOutlet weak var packageTitle: WKInterfaceLabel!
     
 }

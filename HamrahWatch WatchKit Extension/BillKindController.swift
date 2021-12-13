@@ -31,12 +31,6 @@ class BillKindController: WKInterfaceController {
         print("pay the MID-term bill")
     }
     
-    
-    
-    
-    
-    
-    
     @IBAction func midTermBill() {
         status = .midTerm
         configueViewBasedOnBillKind()
@@ -52,10 +46,7 @@ class BillKindController: WKInterfaceController {
         case midTerm
         case longTerm
     }
-    
 
-    
-    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
     }

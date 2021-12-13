@@ -35,7 +35,7 @@ class PackageController: WKInterfaceController {
         tableView.setNumberOfRows(packageKinds.count, withRowType: "packageCell")
         for (index, item) in packageKinds.enumerated() {
             let row = tableView.rowController(at: index) as! PackageCustomCell
-            row.titleOfPackage.setText( "بسته‌ی " + item)
+            row.packageTitle.setText( "بسته‌ی " + item)
         }
     }
     

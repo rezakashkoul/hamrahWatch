@@ -36,7 +36,7 @@ class InternetPackageController: WKInterfaceController {
         tableView.setNumberOfRows(internetPackages.count, withRowType: "internetPackageCell")
         for (index, item) in internetPackages.enumerated() {
             let row = tableView.rowController(at: index) as! InternetPackageCustomCell
-            row.titleOfPackage.setText( "بسته‌ی شماره‌ی " + item.description)
+            row.internetPackageTitle.setText( "بسته‌ی شماره‌ی " + item.description)
         }
     }
     
