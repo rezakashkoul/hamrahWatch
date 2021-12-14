@@ -64,6 +64,9 @@
             <objects>
                 <controller identifier="SetChargeAmountController" title="تعیین مبلغ" id="7nU-gO-vYm" customClass="SetChargeAmountController" customModule="HamrahWatch_WatchKit_Extension">
                     <items>
+                        <separator alignment="left" id="BMu-EY-DLG">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
                         <group width="136" alignment="center" layout="vertical" id="CLl-xW-YSk">
                             <items>
                                 <group width="1" alignment="center" id="jCY-Yd-f8R">
@@ -101,24 +104,21 @@
                                 <action selector="bistHezarTomanButton" destination="7nU-gO-vYm" id="kq9-Ok-wxP"/>
                             </connections>
                         </button>
-                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" id="Kez-6Q-c7C">
+                        <group width="1" height="54" alignment="center" verticalAlignment="bottom" layout="vertical" id="Kez-6Q-c7C">
                             <items>
-                                <separator width="83" alignment="center" id="WZv-Hg-uIZ">
-                                    <color key="color" name="AccentColor"/>
-                                </separator>
                                 <label width="133" alignment="center" verticalAlignment="center" text="مبلغ دلخواه" textAlignment="center" id="ELy-sH-hnV" userLabel="مبلغ دلخواه">
                                     <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                 </label>
                                 <group width="109" alignment="center" verticalAlignment="center" id="ByE-Xd-Ax3">
                                     <items>
-                                        <button width="34" height="25" alignment="left" verticalAlignment="center" title="-" id="4F0-bf-eek">
+                                        <button width="34" height="35" alignment="left" verticalAlignment="center" title="-" id="4F0-bf-eek">
                                             <color key="backgroundColor" name="AccentColor"/>
                                             <fontDescription key="font" type="system" pointSize="21"/>
                                             <connections>
                                                 <action selector="decreaseCustomAmount" destination="7nU-gO-vYm" id="dQs-Fg-wCq"/>
                                             </connections>
                                         </button>
-                                        <button width="34" height="25" alignment="right" verticalAlignment="center" title="+" id="t2T-vN-uBj">
+                                        <button width="34" height="34" alignment="right" verticalAlignment="center" title="+" id="t2T-vN-uBj">
                                             <color key="backgroundColor" name="AccentColor"/>
                                             <fontDescription key="font" type="system" pointSize="21"/>
                                             <connections>
@@ -129,13 +129,30 @@
                                 </group>
                             </items>
                         </group>
+                        <separator width="83" alignment="center" verticalAlignment="bottom" id="gSo-Yo-w7h">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator width="83" alignment="center" verticalAlignment="bottom" id="jf5-xo-Ukt">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <separator width="83" alignment="center" verticalAlignment="bottom" id="q3k-Lx-cBy">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <button width="102" height="53" alignment="center" verticalAlignment="bottom" title="خرید از کیف پول" id="0zx-p3-b3F" userLabel="buy">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <action selector="buyFromWallet" destination="7nU-gO-vYm" id="ZdG-zj-DHX"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="customAmount" destination="ELy-sH-hnV" id="A3S-xX-4sh"/>
+                        <outlet property="customAmountLabel" destination="ELy-sH-hnV" id="A3S-xX-4sh"/>
+                        <outlet property="topSeperator" destination="BMu-EY-DLG" id="Qfw-Mg-z7b"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="246" y="302"/>
+            <point key="canvasLocation" x="246" y="306.5"/>
         </scene>
         <!--خرید بسته-->
         <scene sceneID="Q9J-9D-EHg">
