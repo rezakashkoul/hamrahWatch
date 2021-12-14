@@ -59,6 +59,84 @@
             </objects>
             <point key="canvasLocation" x="-42" y="304"/>
         </scene>
+        <!--تعیین مبلغ-->
+        <scene sceneID="Syu-CI-YxU">
+            <objects>
+                <controller identifier="SetChargeAmountController" title="تعیین مبلغ" id="7nU-gO-vYm" customClass="SetChargeAmountController" customModule="HamrahWatch_WatchKit_Extension">
+                    <items>
+                        <group width="136" alignment="center" layout="vertical" id="CLl-xW-YSk">
+                            <items>
+                                <group width="1" alignment="center" id="jCY-Yd-f8R">
+                                    <items>
+                                        <button width="66" alignment="left" title="۱۰،۰۰۰" id="nVc-6y-6Te">
+                                            <connections>
+                                                <action selector="hezarTomanButton" destination="7nU-gO-vYm" id="RVO-b4-0M0"/>
+                                            </connections>
+                                        </button>
+                                        <button width="66" alignment="left" title="۲۰،۰۰۰" id="Hpc-mF-5Qg">
+                                            <connections>
+                                                <action selector="doHezarTomanButton" destination="7nU-gO-vYm" id="TCM-1h-gSX"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="vig-Yp-w0o">
+                                    <items>
+                                        <button width="66" alignment="left" title="۵۰،۰۰۰" id="B1V-9Q-Br0">
+                                            <connections>
+                                                <action selector="PanjHezarTomanButton" destination="7nU-gO-vYm" id="giH-hl-TTY"/>
+                                            </connections>
+                                        </button>
+                                        <button width="66" alignment="left" title="۱۰۰،۰۰۰" id="1om-Tz-EMl">
+                                            <connections>
+                                                <action selector="dahHezarTomanButton" destination="7nU-gO-vYm" id="LEH-Mo-3Zp"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="66" alignment="center" title="۲۰۰،۰۰۰" id="5BQ-El-lR0">
+                            <connections>
+                                <action selector="bistHezarTomanButton" destination="7nU-gO-vYm" id="kq9-Ok-wxP"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" id="Kez-6Q-c7C">
+                            <items>
+                                <separator width="83" alignment="center" id="WZv-Hg-uIZ">
+                                    <color key="color" name="AccentColor"/>
+                                </separator>
+                                <label width="133" alignment="center" verticalAlignment="center" text="مبلغ دلخواه" textAlignment="center" id="ELy-sH-hnV" userLabel="مبلغ دلخواه">
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                                <group width="109" alignment="center" verticalAlignment="center" id="ByE-Xd-Ax3">
+                                    <items>
+                                        <button width="34" height="25" alignment="left" verticalAlignment="center" title="-" id="4F0-bf-eek">
+                                            <color key="backgroundColor" name="AccentColor"/>
+                                            <fontDescription key="font" type="system" pointSize="21"/>
+                                            <connections>
+                                                <action selector="decreaseCustomAmount" destination="7nU-gO-vYm" id="dQs-Fg-wCq"/>
+                                            </connections>
+                                        </button>
+                                        <button width="34" height="25" alignment="right" verticalAlignment="center" title="+" id="t2T-vN-uBj">
+                                            <color key="backgroundColor" name="AccentColor"/>
+                                            <fontDescription key="font" type="system" pointSize="21"/>
+                                            <connections>
+                                                <action selector="increaseCustomAmount" destination="7nU-gO-vYm" id="lT3-0k-b70"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="customAmount" destination="ELy-sH-hnV" id="A3S-xX-4sh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="246" y="302"/>
+        </scene>
         <!--خرید بسته-->
         <scene sceneID="Q9J-9D-EHg">
             <objects>
