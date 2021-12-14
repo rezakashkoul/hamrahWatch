@@ -11,6 +11,9 @@ import WatchKit
 class SetChargeAmountController: WKInterfaceController {
     
     @IBOutlet weak var topSeperator: WKInterfaceSeparator!
+    @IBOutlet weak var normalChargeCustomAmountStackGroup: WKInterfaceGroup!
+    @IBOutlet weak var chargeAmountLabel: WKInterfaceLabel!
+    
     @IBOutlet weak var customAmountLabel: WKInterfaceLabel!
     
     @IBAction func increaseCustomAmount() {
@@ -66,6 +69,11 @@ class SetChargeAmountController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         self.scroll(to: self.topSeperator, at: .top , animated: true)
+//        if chargeAmount != 0 {
+//            chargeAmountLabel.setHidden(false)
+//        } else {
+//            chargeAmountLabel.setHidden(true)
+//        }
     }
     
     func getAndShowData(_ context: Any?) {
@@ -73,11 +81,30 @@ class SetChargeAmountController: WKInterfaceController {
             chargeIndex = context.0
             chargeType = context.1
             setTitle(chargeType)
+            if chargeType == "عادی" {
+                normalChargeCustomAmountStackGroup.setHidden(false)
+                chargeAmountLabel.setHidden(true)
+//                chargeAmountLabel.setText("لطفاً یکی از مقادیر موجود را انتخاب کنید و یا")
+                if chargeAmount == 0 {
+                    customAmountLabel.setText("لطفاً از مقادیر موجود یکی را انتخاب کنید و یا شارژ دلخواه را وارد کنید")
+                } else {
+                customAmountLabel.setText(chargeAmount.description.convertEngNumToPersianNum() + " ریال ")
+                }
+            } else {
+                normalChargeCustomAmountStackGroup.setHidden(true)
+                chargeAmountLabel.setHidden(false)
+                if chargeAmount == 0 {
+                    chargeAmountLabel.setText("لطفاً از مقادیر موجود یکی را انتخاب کنید")
+                } else {
+                    chargeAmountLabel.setText("شارژ" + chargeAmount.description.convertEngNumToPersianNum() + " ریال ")
+                }
+            }
         }
     }
     
     func setChargeAmount() {
-        customAmountLabel.setText("مبلغ شارژ : " + chargeAmount.description.convertEngNumToPersianNum())
+        customAmountLabel.setText(chargeAmount.description.convertEngNumToPersianNum() + " ریال ")
+        chargeAmountLabel.setText(chargeAmount.description.convertEngNumToPersianNum() + " ریال ")
         print("مبلغ شارژ : " , chargeAmount)
     }
     
